@@ -1,0 +1,38 @@
+
+function selecionarModo(modo) {
+  const conteudo = document.getElementById("conteudo");
+
+  const nomes = {
+    X1: "X1 INDIVIDUAL",
+    "4V4": "CONFRONTO 4V4",
+    "6V6": "CONFRONTO 6V6"
+  };
+
+  conteudo.innerHTML = `
+    <h2>${nomes[modo]}</h2>
+
+    <div class="vazio">
+      <p>Organize seu próximo confronto!</p>
+
+      <br>
+
+      <label>Seu nick no Free Fire</label>
+      <input id="nick" type="text" placeholder="Digite seu nick">
+
+      <br><br>
+
+      <label>ID do adversário</label>
+      <input id="adversario" type="text" placeholder="Digite o ID">
+
+      <br><br>
+
+      <button onclick="alert('Sistema de desafios será conectado ao banco de dados na próxima etapa!')">
+        CRIAR DESAFIO
+      </button>
+    </div>
+  `;
+}
+
+function mostrarDesafios() {
+  selecionarModo("X1");
+}
