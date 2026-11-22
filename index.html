@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b12">
+  <title>FF X1 - Central de Confrontos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="topo">
+    <div class="logo">FF <span>X1</span></div>
+    <div class="perfil">👤</div>
+  </header>
+
+  <main>
+    <section class="destaque">
+      <p>FREE FIRE • CENTRAL DE CONFRONTOS</p>
+      <h1>DOMINE O<br><span>CAMPO DE BATALHA</span></h1>
+      <p>Encontre adversários e organize seus X1.</p>
+      <button onclick="mostrarDesafios()">Encontrar confronto</button>
+    </section>
+
+    <section class="estatisticas">
+      <div><strong id="jogadores">0</strong><small>JOGADORES</small></div>
+      <div><strong id="confrontos">0</strong><small>CONFRONTOS</small></div>
+      <div><strong id="vitorias">0</strong><small>VITÓRIAS</small></div>
+    </section>
+
+    <section class="area">
+      <h2>MODOS DE CONFRONTO</h2>
+      <div class="modos">
+        <button onclick="selecionarModo('X1')">⚔️<br>X1 INDIVIDUAL</button>
+        <button onclick="selecionarModo('4V4')">🔥<br>4V4</button>
+        <button onclick="selecionarModo('6V6')">🏆<br>6V6</button>
+      </div>
+    </section>
+
+    <section class="area" id="conteudo">
+      <h2>ÚLTIMOS CONFRONTOS</h2>
+      <p class="vazio">Nenhum confronto cadastrado ainda.</p>
+    </section>
+  </main>
+
+  <footer>FF X1 • CENTRAL DE CONFRONTOS</footer>
+
+</body>
+</html>
