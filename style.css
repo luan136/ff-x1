@@ -1,0 +1,153 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #090b12;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.topo {
+  height: 75px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #111520;
+  border-bottom: 1px solid #252b38;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.logo span {
+  color: #ff3030;
+}
+
+.perfil {
+  background: #222a38;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 25px auto;
+}
+
+.destaque {
+  background: linear-gradient(135deg, #251018, #101522 75%);
+  border: 1px solid #63212b;
+  border-radius: 18px;
+  padding: 35px 25px;
+  min-height: 270px;
+}
+
+.destaque p:first-child {
+  color: #ff5555;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.destaque h1 {
+  font-size: clamp(27px, 6vw, 43px);
+  margin: 20px 0;
+  line-height: 1.15;
+}
+
+.destaque h1 span {
+  color: #ff3838;
+}
+
+.destaque button {
+  margin-top: 22px;
+  padding: 14px 20px;
+  background: #ed3038;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.estatisticas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.estatisticas div {
+  background: #141a26;
+  border: 1px solid #252e3e;
+  border-radius: 12px;
+  padding: 18px 8px;
+  text-align: center;
+}
+
+.estatisticas strong {
+  display: block;
+  font-size: 25px;
+  color: #ff424b;
+}
+
+.estatisticas small {
+  display: block;
+  margin-top: 7px;
+  color: #9da7b8;
+  font-size: 10px;
+}
+
+.area {
+  margin-top: 28px;
+}
+
+.area h2 {
+  font-size: 17px;
+  margin-bottom: 16px;
+}
+
+.modos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.modos button {
+  background: #171e2b;
+  color: white;
+  border: 1px solid #30394b;
+  border-radius: 12px;
+  padding: 20px 5px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.modos button:active,
+.destaque button:active {
+  transform: scale(0.97);
+}
+
+.vazio {
+  color: #929bad;
+  background: #141a26;
+  padding: 22px;
+  border-radius: 12px;
+  border: 1px solid #252e3e;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  color: #687386;
+  font-size: 11px;
+}
